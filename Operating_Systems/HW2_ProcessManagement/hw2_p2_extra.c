@@ -5,8 +5,7 @@
 #include <unistd.h>
 
 void rwFile(pid_t processID, char wprocess[8]){
-  int i;
-  for(i = 0; i < 200; i++){
+  for(int i = 0; i < 200; i++){
    int num1;
    FILE *fpread = fopen("numb.txt", "r");
    fscanf(fpread, "%d", &num1);
